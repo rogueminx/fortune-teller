@@ -1,18 +1,22 @@
+function Fortune() {
+	this.good = 0;
+  this.bad = 0;
+};
+
 $(document).ready(function(){
   $("form#fortune-survey").submit(function(event){
     event.preventDefault();
-    var badOmens = 0
-    var goodOmens = 0
+    var newFortune = new Fortune();
     $("input:checkbox[name=bad-omen]:checked").each(function(){
-      badOmens += $(this).val();
+      newFortune.bad += parseInt($(this).val());
     });
     $("input:checkbox[name=good-omen]:checked").each(function(){
-      goodOmens += $(this).val();
+      newFortune.good += parseInt($(this).val());
     });
     $('#fortune-survey').hide();
-    if (goodOmens.length > badOmens.length){
+    if (newFortune.good > newFortune.bad){
       $("#good-luck-fortune").show();
-    } else if (badOmens.length > goodOmens.length){
+    } else if (newFortune.bad > newFortune.good){
       $("#bad-luck-fortune").show();
     } else {
       $("#nuetral-luck-fortune").show();
