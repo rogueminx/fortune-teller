@@ -14,6 +14,7 @@ $(document).ready(function(){
       newFortune.good += parseInt($(this).val());
     });
     $('#fortune-survey').hide();
+    // This could be a protytpe associated with the object on the backend.
     if (newFortune.good > newFortune.bad){
       $("#good-luck-fortune").show();
     } else if (newFortune.bad > newFortune.good){
