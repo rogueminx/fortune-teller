@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fortune Teller Quiz</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Fortune Teller Quiz</h1>
+      </div>
+      <form id="fortune-survey">
+        <div class="form-group">
+          <p>In the past six months, I have had the following experiences (check all that apply):</p>
+          <input type="checkbox" name="bad-omen" value="1"> Broken a mirror.<br>
+          <input type="checkbox" name="bad-omen" value="1"> Opened a umbrella indoors.<br>
+          <input type="checkbox" name="bad-omen" value="1"> Black cat crossed your path.<br>
+          <input type="checkbox" name="bad-omen" value="1"> Walked under a ladder.<br>
+          <input type="checkbox" name="bad-omen" value="1"> Failed to respnd to a chain letter.<br>
+          <input type="checkbox" name="bad-omen" value="1"> Stepped on a grave.<br>
+          <input type="checkbox" name="bad-omen" value="1"> Seen a single crow or raven.<br>
+          <input type="checkbox" name="bad-omen" value="1"> A bird has entered your home.<br>
+        </div>
+        <div class="form-group">
+          <p>In the past year, I have used the following modes of transportation to travel to other activities and events:</p>
+          <input type="checkbox" name="good-omen" value="1"> A bird has pooped on you.<br>
+          <input type="checkbox" name="good-omen" value="1"> Seen a shooting star.<br>
+          <input type="checkbox" name="good-omen" value="1"> A butterfly has flown into your house.<br>
+          <input type="checkbox" name="good-omen" value="1"> Found a four leaf clover.<br>
+          <input type="checkbox" name="good-omen" value="1"> Put your clothes on backwards.<br>
+          <input type="checkbox" name="good-omen" value="1"> A cat stays in your house.<br>
+          <input type="checkbox" name="good-omen" value="1"> Your hands have tingled or shivered.<br>
+          <input type="checkbox" name="good-omen" value="1"> You've seen both rain and sunshine at the same time.<br>
+          <input type="checkbox" name="good-omen" value="1"> Itchy ears.<br>
+        </div>
+       <button type="submit">Submit Survey</button>
+      </form>
+      <span id="good-luck-fortune">
+        <p><b>Oh, you lucky soul. Your spate of good luck will likely lead to increases in happiness. You will continue to gain  love, wealth, and other ingredients necessary for a happy life.</b></p>
+      </span>
+      <br>
+      <span id="nuetral-luck-fortune">
+        <p><b>Your fortunes are balanced. You will continue forward fairing no better or less.</b></p>
+      </span>
+      <br>
+      <span id="bad-luck-fortune">
+        <p><b>Oh, you unlucky soul. Your spate of bad luck will likely lead to further misfotune. Loss of love, wealth, and life are all distinct possibilities.</b></p>
+      </span>
+    </div>
+  </body>
+</html>
